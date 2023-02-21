@@ -1,38 +1,171 @@
-.App {
+/* Set the dark mode variables... */
+[data-theme="dark"] {
+  --background: black;
+  --title-text: white;
+  --desc-text: grey;
+}
+
+/* Set the light mode variables... */
+[data-theme="light"] {
+  --background: white;
+  --title-text: black;
+  --desc-text: grey;
+}
+
+/* Page Styles... */
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  /* background-color: red; */
+  /* background: var(--background); */
+}
+
+.body {
+  font-family: sans-serif;
   text-align: center;
+  background: var(--background);
+  height: 100vh;
+  padding-top: 100px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.cart_counter {
+    border: 2px solid #54515e;
+    padding: 0px 7px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .wrapper {
+    position: relative;
   }
-  to {
-    transform: rotate(360deg);
+  .wrapper span {
+    position: absolute;
+    top: -6px;
+    right: -2px;
+  
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    border-radius: 50%;
   }
-}
+  
+  .ctc {
+    background: linear-gradient(98.91deg, #4e449c -1.31%, #516380);
+    font-weight: 700;
+    border-radius: 10px !important;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+  }
+  .gets {
+    background: linear-gradient(148.11deg, #4e449c 8.52%, #516380 94.03%);
+    font-weight: 700;
+    border-radius: 10px !important;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 18px;
+  }
+  .ctcs {
+    background: linear-gradient(98.91deg, #21161d -1.31%, #bfa0b0);
+    font-weight: 700;
+    border-radius: 10px !important;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  .getss {
+    background: linear-gradient(148.11deg, #7567a3 8.52%, #9bb8c1 94.03%);
+    font-weight: 700;
+    border-radius: 10px !important;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  .mainmenu a:hover {
+    color: #d5d2d3 !important;
+  }
+  .filActive {
+    display: block !important;
+  }
+  .product-name {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ccc0c6;
+    line-height: 3;
+  }
+  .aboutmargin {
+    margin-top: 140px;
+  }
+  .fil-inner select {
+    padding: 10px;
+  }
+  .price__output--wrap .price--filter a.btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .team .member {
+    position: relative;
+    box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+    padding: 30px;
+    border-radius: 10px;
+    background: #232038;
+    transition: 0.5s;
+  }
+  .team .member .member-info {
+    padding-left: 30px;
+  }
+  .team .member span {
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: 500;
+  }
+  .team .member h4 {
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #d40f71;
+  }
+  .team .member span::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #cbd6e9;
+    bottom: 0;
+    left: 0;
+  }
+  .team .member .social {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .team .member .social a {
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #eff2f8;
+  }
+  .team .member .social a i {
+    color: #c0ada8;
+    font-size: 16px;
+    margin: 0 2px;
+  }
+  .team .member .social a + a {
+    margin-left: 8px;
+  }
+  .team .member .pic {
+    overflow: hidden;
+    width: 180px;
+    border-radius: 50%;
+  }
+  
